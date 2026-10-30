@@ -107,14 +107,14 @@ CREATE OR REPLACE PROCEDURE register_student (
     p_department NUMBER
 )
 IS
-    TYPE student_record IS RECORD (    // creates our own record structure.
+    TYPE student_record IS RECORD (  
         student_id NUMBER,
         student_name VARCHAR2(100),
         email VARCHAR2(100),
         department_id NUMBER
     );
 
-    v_student student_record;  // declares a variable using that structure.
+    v_student student_record; 
 
 BEGIN
     -- Store information in the record
